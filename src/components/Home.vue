@@ -40,13 +40,13 @@
       <div class="most_reviewed">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 flex items-center justify-center">
           <div class="relative bg-white py-7 px-6 rounded-3xl w-80 h-80 my-2 shadow-md">
-            <img src="../image/book-cover-design-svg-vector-46056262.jpg" alt="" class="w-70 h-40">
+            <img src="../image/book-svgrepo-com.svg" alt="" class="w-70 h-40">
             <p>Name: </p>
             <p>author: </p>
             <p>rate: </p>
           </div>
           <div class="relative bg-white py-7 px-6 rounded-3xl w-80 my-2 shadow-md">
-            <img src="../image/book-cover-design-svg-vector-46056262.jpg" alt="" class="w-70 h-40">
+            <img src="../image/book-svgrepo-com.svg" alt="" class="w-70 h-40">
             <p>Name: </p>
             <p>author: </p>
             <p>rate: </p>
@@ -54,7 +54,7 @@
 
 
           <div class="relative bg-white py-7 px-6 rounded-3xl w-80 my-2 shadow-md">
-            <img src="../image/book-cover-design-svg-vector-46056262.jpg" alt="" class="w-70 h-40">
+            <img src="../image/book-svgrepo-com.svg" alt="" class="w-70 h-40">
 
             <div>
             <p>Name: </p>
@@ -73,13 +73,13 @@
         <h1 class="font-semibold font-serif">Recently Added Book</h1>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 flex items-center justify-center">
           <div class="relative bg-white py-7 px-6 rounded-3xl w-80 h-80 my-2 shadow-md">
-            <img src="../image/book-cover-design-svg-vector-46056332.jpg" alt="" class="w-70 h-40">
+            <img src="../image/book-svgrepo-com.svg" alt="" class="w-70 h-40">
             <p>Name: </p>
             <p>author: </p>
             <p>rate: </p>
           </div>
           <div class="relative bg-white py-7 px-6 rounded-3xl w-80 h-80 my-2 shadow-md">
-            <img src="../image/book-cover-design-svg-vector-46056321.jpg" alt="" class="w-70 h-40">
+            <img src="../image/book-svgrepo-com.svg" alt="" class="w-70 h-40">
             <p>Name: </p>
             <p>author: </p>
             <p>rate: </p>
@@ -87,7 +87,7 @@
 
 
           <div class="relative bg-white py-7 px-6 rounded-3xl w-80 h-80 my-2 shadow-md">
-            <img src="../image/book-cover-design-svg-vector-46056262.jpg" alt="" class="w-70 h-40">
+            <img src="../image/book-svgrepo-com.svg" alt="" class="w-70 h-40">
 
             <div>
             <p>Name: </p>
