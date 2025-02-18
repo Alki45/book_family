@@ -1,6 +1,6 @@
 <template>
-    <div class="footer">
-        <h1>Visitors</h1>
+    <div class=" relative justify-items-center">
+        <h1 class=" font-serif font-semibold">Weekly Visitors</h1>
                     
 
             <div class="flex items-center mb-2">
@@ -24,37 +24,37 @@
                 <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
             </div>
             <p class="text-sm font-medium text-gray-500 dark:text-gray-400">1,745 global ratings</p>
-            <div class="flex items-center mt-4">
+            <div class="flex items-center mt-10">
                 <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Self-Development</a>
-                <div class="w-2/4 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
+                <div class="w-80 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
                     <div class="h-8 bg-green-600 rounded-sm" style="width: 70%"></div>
                 </div>
                 <span class="text-sm font-medium text-gray-500 dark:text-gray-400">70%</span>
             </div>
             <div class="flex items-center mt-4">
                 <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Religious</a>
-                <div class="w-2/4 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
+                <div class="w-80 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
                     <div class="h-8 bg-green-600 rounded-sm" style="width: 17%"></div>
                 </div>
                 <span class="text-sm font-medium text-gray-500 dark:text-gray-400">17%</span>
             </div>
             <div class="flex items-center mt-4">
                 <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Fiction</a>
-                <div class="w-2/4 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
+                <div class="w-80 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
                     <div class="h-8 bg-green-600 rounded-sm" style="width: 8%"></div>
                 </div>
                 <span class="text-sm font-medium text-gray-500 dark:text-gray-400">8%</span>
             </div>
             <div class="flex items-center mt-4">
                 <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Non-fiction</a>
-                <div class="w-2/4 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
+                <div class="w-80 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
                     <div class="h-8 bg-green-600 rounded-sm" style="width: 4%"></div>
                 </div>
                 <span class="text-sm font-medium text-gray-500 dark:text-gray-400">4%</span>
             </div>
             <div class="flex items-center mt-4">
                 <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Business</a>
-                <div class="w-2/4 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
+                <div class="w-80 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
                     <div class="h-8 bg-green-600 rounded-sm" style="width: 1%"></div>
                 </div>
                 <span class="text-sm font-medium text-gray-500 dark:text-gray-400">1%</span>
