@@ -69,6 +69,6 @@
 </template>
 <script>
 export default {
-  name: 'Home',
+  name: 'footer',
 }
 </script>

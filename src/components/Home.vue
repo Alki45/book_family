@@ -1,4 +1,5 @@
 <template>
+  <div class="bg-blue-100">    
     <div class="p-4 font-serif bg-gray-50">
       <h1 class="text-2xl font-semibold">
         Wel-Come To Famy-Book Community
@@ -118,94 +119,11 @@
       </div>
   <!--End of Recent Book Uploaded-->
 
+    <!-- Catagories Component-->
+    <Catagories/>
 
 
 
-
-  <!-- Card Catagories   grid grid-cols-1 md:grid-cols-4 gap-6 flex items-center justify-center-->
-    <div class=" card-Catagories py-20">
-      <h1 class=" font-semibold font-serif">Catagories</h1>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 flex items-center justify-center py-2">
-        
-    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
-        <!-- 1 card -->
-        <div class="relative bg-white py-6 px-6 rounded-3xl w-80 my-4 shadow-xl">
-            <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-pink-500 left-20 -top-5">
-                <!-- svg  -->
-                 <p>فقه</p>
-                 <a href=""><img src="../image/285636_book_icon.svg" >
-                 </a>
-            </div>
-            <div class="mt-8">
-                <div class="flex space-x-2 text-black border-l-teal-800 text-sm my-3">
-                    <!-- svg  -->
-                    <svg xmlns="../image/285636_book_icon.svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                     <p>1000 كتب</p> 
-                </div>
-                <div class="border-t-2"></div>
-
-                <div class="flex justify-between">
-                    <div class="my-2">
-                        <p class="font-semibold text-base mb-2">مذهب</p>
-                        <div class="flex space-x-3">
-                          <div>
-                            <a href=""><img src="../image/285636_book_icon.svg" 
-                            class="w-50 h-10"/>
-                            <div>
-                              <p>Hanefy</p>
-                            </div>
-                          </a>
-                          </div>
-                          <div>
-                            <a href="">
-                             <img src="../image/3069185_book_education_learn_school_icon.svg" 
-                            class="w-50 h-10"/>
-
-                            <div>
-                              <p>Maliky</p>
-                            </div>
-                          </a>
-                          </div>
-                          <div>
-                            <a href="">
-                             <img src="../image/6428000_book_education_school_student_icon.svg" 
-                            class="w-50 h-10"/>
-                            <div>
-                              <p>Shafy</p>
-                            </div>
-                          </a>
-                          </div>
-                          <div>
-                            <a href="">
-                            <img src="../image/6428005_book_education_school_student_icon.svg" 
-                            class="w-50 h-10"/>
-                            <div>
-                              <p>Hanbely</p>
-                            </div>
-                          </a>
-                          </div>
-                      <div class="my-2">
-                        <p class="font-semibold text-base mb-1">Daily View</p>
-                        <div class="text-base text-gray-400 font-semibold">
-                            <p>34%</p>
-                        </div>
-                    </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-      </div>
-</div>
-
-
-
-    </div>
- <!--End of Card Catagories-->
 
 
 
@@ -216,21 +134,54 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center my-4">
     <!-- Community Platforms -->
     <div class="bg-white rounded-3xl shadow-md p-6">
-      <h1 class="text-xl font-bold text-indigo-600 mb-4">Our Community Platforms</h1>
-      <ul class="list-disc ml-4">
-        <li>Telegram</li>
-        <li>WhatsApp</li>
-        <li>Discord</li>
-      </ul>
+      <h1 class="text-xl font-bold text-indigo-600 mb-4">Join Our Community Platforms</h1>
+      <ul class="list-disc ml-4 font-semibold justify-between">
+        <div>
+            <span class=" font-bold font-serif inline-flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#141ac8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+          
+              <span class="ml-2">contact@famybook.com</span>
+            </span>
+          </div>
+          <div>
+            <span class="font-bold font-serif inline-flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1480b7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            <span class="ml-2">Instagram</span>
+            </span>
+          </div>
+          <div>          <span class="font-bold font-serif inline-flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1480b7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+              <span class="ml-2"><a href="https://t.me/Alki45">@famybook</a></span>
+            </span>
+          </div>
+            </ul>
     </div>
 
     <!-- Contact Information -->
     <div class="bg-white rounded-3xl shadow-md p-6">
       <h1 class="text-xl font-bold text-indigo-600 mb-4">Contact Us</h1>
       <ul class="list-disc ml-4 font-semibold">
-        <li>Email: contact@famybook.com</li>
-        <li>Phone Number: +25(19) 2559-4543</li>
-        <li>Telegram: @famybook</li>
+
+        <span class=" font-bold font-serif inline-flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#141ac8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+          <span class="ml-2">contact@famybook.com</span>
+      </span>
+      <span class="font-bold font-serif inline-flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#141ac8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path><path d="M14.05 2a9 9 0 0 1 8 7.94"></path><path d="M14.05 6A5 5 0 0 1 18 10"></path></svg>
+      
+      <span class="ml-2">+25(19) 9999-4543</span>
+    </span>
+
+        <span class="font-bold font-serif inline-flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1480b7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+          <span class="ml-2"><a href="https://t.me/Alki45">@famybook</a></span>
+        </span>
       </ul>
       <textarea class="w-full mt-4 p-2 border border-gray-300 rounded-md" placeholder="Your feedback"></textarea>
       <button class="mt-2 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Send</button>
@@ -240,18 +191,21 @@
 <!-- End of About Us -->
 
 <FooterNav/>
+</div>
 
   </template>
   
   <script>
   import  FooterNav  from "./FooterNav.vue";
   import SlidingImage from "@/views/SlidingImage.vue";
+  import Catagories from "./catagories/Catagories.vue"
 
   export default {
     name: 'Home',
     components:{
       FooterNav,
       SlidingImage,
+      Catagories,
   },
 
   };

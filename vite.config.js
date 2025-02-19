@@ -8,7 +8,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 
 export default defineConfig({
-  base:"/book_family/",
+  base: process.env.NODE_ENV==='production'?"/book_family/":"/",
   build: {
     outDir: 'dist',
   },
