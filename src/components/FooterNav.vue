@@ -1,5 +1,5 @@
 <template>
-    <div class=" relative justify-items-center">
+    <div class=" relative justify-items-center py-9">
         <h1 class=" font-serif font-semibold">Weekly Visitors</h1>
                     
 
@@ -32,28 +32,28 @@
                 <span class="text-sm font-medium text-gray-500 dark:text-gray-400">70%</span>
             </div>
             <div class="flex items-center mt-4">
-                <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Religious</a>
+                <a href="#" class="px-6 text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Religious</a>
                 <div class="w-80 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
                     <div class="h-8 bg-green-600 rounded-sm" style="width: 17%"></div>
                 </div>
                 <span class="text-sm font-medium text-gray-500 dark:text-gray-400">17%</span>
             </div>
             <div class="flex items-center mt-4">
-                <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Fiction</a>
+                <a href="#" class="px-8 text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Fiction</a>
                 <div class="w-80 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
                     <div class="h-8 bg-green-600 rounded-sm" style="width: 8%"></div>
                 </div>
                 <span class="text-sm font-medium text-gray-500 dark:text-gray-400">8%</span>
             </div>
             <div class="flex items-center mt-4">
-                <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Non-fiction</a>
+                <a href="#" class="px-4 text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Non-fiction</a>
                 <div class="w-80 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
                     <div class="h-8 bg-green-600 rounded-sm" style="width: 4%"></div>
                 </div>
                 <span class="text-sm font-medium text-gray-500 dark:text-gray-400">4%</span>
             </div>
             <div class="flex items-center mt-4">
-                <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Business</a>
+                <a href="#" class="px-6 text-sm font-medium text-blue-600 dark:text-blue-500 hover:border-lime-600">Business</a>
                 <div class="w-80 h-8 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
                     <div class="h-8 bg-green-600 rounded-sm" style="width: 1%"></div>
                 </div>
@@ -61,7 +61,11 @@
             </div>   
 
     </div>
-
+<footer>
+    <div class="h-8 bg-blue-800 py-10">
+    <h1 class=" font-bold text-center">Copy right Presereved 2025</h1>
+</div>
+</footer>
 </template>
 <script>
 export default {

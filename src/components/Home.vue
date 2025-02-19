@@ -3,38 +3,10 @@
       <h1 class="text-2xl font-semibold">
         Wel-Come To Famy-Book Community
       </h1>
-      <div class="relative justify-items-center">
-        <img class="h-64 w-100 object-cover object-center justify-items-center" :src="images[selected]" alt="mountains" />
-        
-        <!-- Previous Button -->
-        <button @click="prevSlide" class="absolute inset-y-0 left-0 px-2 py-[25%] h-full w-8 group hover:bg-gray-500 hover:bg-opacity-75 cursor-pointer">
-          <span class="hidden group-hover:block text-gray-50">
-            &larr;
-          </span>
-        </button>
-  
-        <!-- Next Button -->
-        <button @click="nextSlide" class="absolute inset-y-0 right-0 px-2 py-[25%] h-full w-8 group hover:bg-gray-500 hover:bg-opacity-75 cursor-pointer">
-          <span class="hidden group-hover:block text-gray-50">
-            &rarr;
-          </span>
-        </button>
-  
-        <!-- Dots Indicator -->
-        <div class="absolute bottom-0 w-full p-4 flex justify-center space-x-2">
-          <button
-            v-for="(image, index) in images"
-            :key="index"
-            @click="selected = index"
-            :class="{'bg-gray-300': selected === index, 'bg-gray-500': selected !== index}"
-            class="h-2 w-2 rounded-full hover:bg-gray-300 ring-2 ring-gray-300"
-          ></button>
-        </div>
-      </div>
-    </div>
-
-
-      <!--Best Sold Book-->
+      <SlidingImage/>
+      
+ </div>
+      <!--Best Reviewed Book-->
   <section class="Recent-book-uploaded">
     <h1>Most Reviewed Book</h1>
       <div class="most_reviewed">
@@ -273,29 +245,15 @@
   
   <script>
   import  FooterNav  from "./FooterNav.vue";
+  import SlidingImage from "@/views/SlidingImage.vue";
+
   export default {
     name: 'Home',
     components:{
-      FooterNav
+      FooterNav,
+      SlidingImage,
   },
-    data() {
-      return {
-        selected: 0,
-        images: [
-        "/public/book-cover-design-svg-vector-46056332.jpg",
-        "/public/book-cover-design-svg-vector-46056332.jpg",
-        "/public/book-cover-design-svg-vector-46056332.jpg"
-        ]
-      };
-    },
-    methods: {
-      prevSlide() {
-        this.selected = this.selected > 0 ? this.selected - 1 : this.images.length - 1;
-      },
-      nextSlide() {
-        this.selected = this.selected < this.images.length - 1 ? this.selected + 1 : 0;
-      }
-    }
+
   };
   </script>
   

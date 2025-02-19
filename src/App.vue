@@ -1,6 +1,6 @@
 
 <template>
-  <div class="bg-green-700 p-4 rounded-md shadow-md text-white">
+  <div class="bg-blue-800 p-4 rounded-md shadow-md text-white">
       <div class="grid grid-cols-6 rounded-md items-center p-4 bg-blue-200 text-black">
     <!-- Logo Section -->
     <div class="col-span-1 relative w-80 h-10">
@@ -23,6 +23,7 @@
 </template>
 <script>
 import Login from './components/Login.vue';
+
 import Home from './components/Home.vue';
 
 export default {
