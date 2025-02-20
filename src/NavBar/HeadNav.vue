@@ -11,10 +11,13 @@
   
         <!-- Navigation Links (Hidden on small screens) -->
         <nav class="hidden md:flex space-x-7">
+
+          
+          <router-link to="/DisplayPage" class="hover:text-blue-400 font-semibold"><Catagory/></router-link>
+          <router-link to="/" class="hover:text-blue-800 font-semibold">Home</router-link>
           <router-link to="/login" class="hover:text-blue-400 font-semibold">Login</router-link>
-          <router-link to="/home" class="hover:text-blue-800 font-semibold">Home</router-link>
-          <router-link to="/catagories" class="hover:text-blue-400 font-semibold"><Catagory/></router-link>
-          <router-link to="/about" class="hover:text-blue-400 font-semibold">About</router-link>
+          <router-link to="/" class="hover:text-blue-400 font-semibold">About</router-link>
+
         </nav>
   
         <!-- Mobile Menu Button -->
@@ -27,10 +30,12 @@
   
       <!-- Mobile Dropdown Menu -->
       <div v-if="menuOpen" class="md:hidden bg-blue-700 text-white p-4 space-y-2">
-        <router-link to="/login" class="block hover:text-blue-400">Login</router-link>
+        
+        
+        <router-link to="/DisplayPage" class="block hover:text-blue-400"><Catagory/></router-link>
         <router-link to="/" class="block hover:text-blue-800">Home</router-link>
-        <router-link to="/" class="block hover:text-blue-400"><Catagory/></router-link>
-        <router-link to="/about" class="block hover:text-blue-400">About</router-link>
+        <router-link to="/login" class="hover:text-blue-400 font-semibold">Login</router-link>
+        <router-link to="/" class="block hover:text-blue-400">About</router-link>
       </div>
     </div>
   </template>

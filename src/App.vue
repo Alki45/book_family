@@ -1,8 +1,8 @@
 
 <template>
-  <HeadNav />  <!-- Navigation Bar -->
-  <router-view />  <!-- This will dynamically render Home or Login -->
-  <Home v-if="$route.path !='/login'"/>
+  <HeadNav /> 
+  <router-view /> 
+
 </template>
 <script>
 
@@ -16,7 +16,6 @@ import Home from './components/Home.vue';
 export default {
   name:'App',
   components:{
-
     HeadNav,
     Home
     
