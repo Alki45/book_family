@@ -11,15 +11,11 @@
 
     <!-- Product Cards -->
     <div class="flex overflow-hidden w-full py-10">
-      <TransitionGroup 
-        tag="div" 
-        name="slide" 
-        class="flex items-center space-x-4"
-      >
+      <TransitionGroup tag="div" name="slide" class="flex items-center space-x-4">
         <div 
           v-for="product in displayedProducts" 
           :key="product.id" 
-          class="bg-slate-500 w-72 sm:w-64 md:w-56 lg:w-72 h-96 shadow-lg rounded-lg m-2 sm:m-3 md:m-4 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+          class="bg-slate-500 w-full max-w-[calc(100%/productsPerRow-1rem)] h-96 shadow-lg rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
         >
           <div class="h-4/6 w-full">
             <img class="w-full h-full object-cover rounded-t" :src="product.image" :alt="product.name">
@@ -51,46 +47,46 @@
 
 <script setup>
 import { useProductStore } from '/src/stores/productstores.js'; 
-import { onMounted, ref, watch } from 'vue';
+import { onMounted, ref, watch, onUnmounted } from 'vue';
 
 const productStore = useProductStore();
 const displayedProducts = ref([]);
 const currentIndex = ref(0);
-const productsPerPage = ref(4);
+const productsPerRow = ref(6);  // Dynamically set based on screen width
 
-// Responsiveness
-const setProductsPerPage = () => {
-  const width = window.innerWidth;
+const updateProductsPerRow = () => {
+  const width = window.innerWidth / window.devicePixelRatio;  // Adjust for zoom
   if (width < 640) {
-    productsPerPage.value = 1;
+    productsPerRow.value = 1;
   } else if (width >= 640 && width < 1024) {
-    productsPerPage.value = 2;
+    productsPerRow.value = 2;
+  } else if (width >= 1024 && width < 1440) {
+    productsPerRow.value = 3;
   } else {
-    productsPerPage.value = 4;
+    productsPerRow.value = 6;
   }
-};
-
-//update displayed products
-const updateDisplayedProducts = () => {
-  displayedProducts.value = productStore.products.slice(currentIndex.value, currentIndex.value + productsPerPage.value);
-};
-
-// Fetch products 
-onMounted(async () => {
-  setProductsPerPage();
-  await productStore.fetchProducts();  
   updateDisplayedProducts();
+};
 
-  // window resize
-  window.addEventListener("resize", () => {
-    setProductsPerPage();
-    updateDisplayedProducts();
-  });
+const updateDisplayedProducts = () => {
+  displayedProducts.value = productStore.products.slice(currentIndex.value, currentIndex.value + productsPerRow.value);
+};
+
+// Fetch products & set initial values
+onMounted(async () => {
+  await productStore.fetchProducts();  
+  updateProductsPerRow();
+  window.addEventListener("resize", updateProductsPerRow);
+});
+
+// Clean up event listeners
+onUnmounted(() => {
+  window.removeEventListener("resize", updateProductsPerRow);
 });
 
 // Slide next product in
 const nextProducts = () => {
-  if (currentIndex.value + productsPerPage.value < productStore.products.length) {
+  if (currentIndex.value + productsPerRow.value < productStore.products.length) {
     currentIndex.value += 1;
     updateDisplayedProducts();
   }
@@ -108,7 +104,7 @@ const prevProducts = () => {
 <style>
 /* Slide Animation */
 .slide-enter-active, .slide-leave-active {
-  transition: transform 0.005s ease-in-out, opacity 0.5s;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
 }
 .slide-enter-from {
   transform: translateX(100%);
