@@ -55,12 +55,14 @@
       <!-- Sign Up Link -->
       <p class="text-center text-sm text-gray-600 dark:text-gray-300 mt-4">
         Don't have an account? 
-        <a href="#" class="text-purple-500 hover:underline">Sign Up</a>
+        <router-link to="/registration" class="hover:text-blue-400 font-semibold">Sign UP</router-link>
+        
       </p>
 
     </div>
 
   </div>
+  <router-view /> 
 </template>
 
 <script>

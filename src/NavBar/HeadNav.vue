@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-blue-800 p-4 shadow-md text-white">
+    <div class="">
       <!-- Navbar Container -->
-      <div class="flex items-center justify-between bg-blue-200 text-black p-4 rounded-md">
+      <div class="flex items-center justify-between bg-blue-200 text-black p-4 rounded-full ">
         
         <!-- Logo Section -->
         <div class="flex items-center space-x-2">
@@ -10,12 +10,13 @@
         </div>
   
         <!-- Navigation Links (Hidden on small screens) -->
-        <nav class="hidden md:flex space-x-7">
+        <nav class="hidden md:flex space-x-7 justify-items-center">
 
           
           <router-link to="/DisplayPage" class="hover:text-blue-400 font-semibold"><Catagory/></router-link>
           <router-link to="/" class="hover:text-blue-800 font-semibold">Home</router-link>
           <router-link to="/login" class="hover:text-blue-400 font-semibold">Login</router-link>
+          <router-link to="/books">Books List</router-link>
           <router-link to="/" class="hover:text-blue-400 font-semibold">About</router-link>
 
         </nav>
@@ -35,6 +36,7 @@
         <router-link to="/DisplayPage" class="block hover:text-blue-400"><Catagory/></router-link>
         <router-link to="/" class="block hover:text-blue-800">Home</router-link>
         <router-link to="/login" class="hover:text-blue-400 font-semibold">Login</router-link>
+        
         <router-link to="/" class="block hover:text-blue-400">About</router-link>
       </div>
     </div>

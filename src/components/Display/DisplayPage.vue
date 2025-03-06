@@ -61,7 +61,7 @@ const updateProductsPerRow = () => {
   } else if (width >= 640 && width < 1024) {
     productsPerRow.value = 2;
   } else if (width >= 1024 && width < 1440) {
-    productsPerRow.value = 3;
+    productsPerRow.value = 4;
   } else {
     productsPerRow.value = 6;
   }
